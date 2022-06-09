@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="612.0" style="-fx-background-color: #C1EA99;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.Layout.MainLayoutController">
+   <children>
+      <ImageView fx:id="image" fitHeight="414.0" fitWidth="360.0" layoutX="238.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="table" layoutX="20.0" layoutY="86.0" prefHeight="200.0" prefWidth="202.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="112.0" text="Название" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="14.0" layoutY="303.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #03c03c;" text="✅ Добавить" />
+      <Button fx:id="update" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #03c03c;" text="🔄 Изменить" />
+      <Button fx:id="delete" layoutX="14.0" layoutY="390.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #03c03c;" text="❌ Удалить" />
+      <Button fx:id="refresh" layoutX="143.0" layoutY="341.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="78.0" style="-fx-background-color: #03c03c;" text="Обновить&#10;данные" textAlignment="CENTER" />
+      <ImageView fitHeight="66.0" fitWidth="144.0" layoutX="20.0" layoutY="10.0">
+         <image>
+            <Image url="@../../Login/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLayout" layoutX="376.0" layoutY="374.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

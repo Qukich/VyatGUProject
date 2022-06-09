@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Login/LoginController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Login/Role.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Login/Start.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkingFunctions/DBwork.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/module-info.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1251" />
+  </component>
+</project>

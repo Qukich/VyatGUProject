@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="pain" prefHeight="432.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controllers.MainOrderController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+          <Menu fx:id="client" mnemonicParsing="false" text="Клиент">
+            <items>
+               <MenuItem fx:id="openClient" mnemonicParsing="false" text="Открыть" />
+            </items></Menu>
+          <Menu fx:id="menuEmployee" mnemonicParsing="false" text="Сотрудники">
+            <items>
+               <MenuItem fx:id="openEmployee" mnemonicParsing="false" text="Открыть" />
+            </items></Menu>
+        <Menu mnemonicParsing="false" text="Каталог">
+            <Menu fx:id="furniture" mnemonicParsing="false" text="Мебель" />
+            <Menu fx:id="layout" mnemonicParsing="false" text="Макеты" />
+            <Menu fx:id="upholstery" mnemonicParsing="false" text="Обивка" />
+            <Menu fx:id="accessories" mnemonicParsing="false" text="Фурнитура" />
+            <Menu fx:id="filler" mnemonicParsing="false" text="Наполнитель" />
+        </Menu>
+         <Menu mnemonicParsing="false" text="Профиль">
+            <items>
+               <MenuItem fx:id="changeUser" mnemonicParsing="false" text="Сменить пользователя" />
+               <MenuItem fx:id="exit" mnemonicParsing="false" text="Выйти из приложения" />
+            </items>
+         </Menu>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="427.0" prefWidth="862.0" style="-fx-background-color: #C1EA99;" VBox.vgrow="ALWAYS">
+      <children>
+            <Label fx:id="time" layoutX="760.0" layoutY="10.0" prefHeight="22.0" prefWidth="68.0">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="752.0" layoutY="31.0" prefHeight="22.0" prefWidth="79.0">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="11.0" layoutY="123.0" prefHeight="273.0" prefWidth="821.0">
+              <columns>
+                  <TableColumn fx:id="id" prefWidth="87.0" text="Номер заказа" />
+                  <TableColumn fx:id="fio" prefWidth="162.0" text="ФИО клиента" />
+                  <TableColumn fx:id="status" prefWidth="171.0" text="Статус заказа" />
+                  <TableColumn fx:id="furn" prefWidth="173.0" text="Мебель в заказе" />
+                  <TableColumn fx:id="date_ord" prefWidth="108.0" text="Дата заказа" />
+                  <TableColumn fx:id="date_close" prefWidth="121.0" text="Дата закрытия" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="99.0" fitWidth="222.0" layoutX="188.0" layoutY="9.0">
+               <image>
+                  <Image url="@../Login/logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="searchFild" layoutX="452.0" layoutY="42.0" prefHeight="25.0" prefWidth="262.0" promptText="Поиск по номеру заказа" />
+            <Label layoutX="452.0" layoutY="21.0" text="Поиск по номеру заказа">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="search" layoutX="452.0" layoutY="78.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="88.0" style="-fx-background-color: #03c03c;" text="Поиск" />
+            <Button fx:id="refresh" layoutX="611.0" layoutY="78.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: #03c03c;" text="Обновить" />
+            <Button fx:id="addOrd" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #03c03c;" text="✅ Создать заказ" />
+            <Button fx:id="updateOrd" layoutX="14.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #03c03c;" text="🔄 Изменить заказ" />
+            <Button fx:id="deleteOrd" layoutX="14.0" layoutY="87.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #03c03c;" text="❌ Удалить заказ" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

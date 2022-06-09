@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="300.0" style="-fx-background-color: #C1EA99;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.UpholsteryControllers.UpholsteryUpdateController">
+   <children>
+      <Label layoutX="23.0" layoutY="-7.0" prefHeight="67.0" prefWidth="253.0" text="Изменение обивки" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameSearch" layoutX="39.0" layoutY="98.0" prefHeight="25.0" prefWidth="223.0" promptText="Название" />
+      <Button fx:id="update" layoutX="52.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="195.0" style="-fx-background-color: #03c03c;" text="Изменить данные">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="67.0" layoutY="49.0" text="Введите название обивки &#10;у которой обновить данные" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="123.0" text="Поля обновления">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="nameUnit" layoutX="207.0" layoutY="227.0" prefHeight="6.0" prefWidth="53.0" style="-fx-background-color: #32CD32;" />
+      <Label layoutX="38.0" layoutY="152.0" text="Цена(в рублях)">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="38.0" layoutY="171.0" prefHeight="25.0" prefWidth="223.0" promptText="Цена" />
+      <TextField fx:id="countUnit" layoutX="38.0" layoutY="227.0" prefHeight="25.0" prefWidth="167.0" promptText="Количество" />
+      <Label layoutX="38.0" layoutY="203.0" text="Количество на скалде">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

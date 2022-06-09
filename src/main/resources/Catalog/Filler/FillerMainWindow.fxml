@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="531.0" style="-fx-background-color: #C1EA99;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.FillerControllers.FillerMainController">
+   <children>
+      <TableView fx:id="table" layoutX="164.0" layoutY="17.0" prefHeight="222.0" prefWidth="353.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="112.0" text="Название" />
+          <TableColumn fx:id="price" prefWidth="120.0" text="Цена за кг" />
+            <TableColumn fx:id="stock" prefWidth="120.0" text="Остаток на складе" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="24.0" layoutY="149.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #03c03c;" text="✅ Добавить" />
+      <Button fx:id="delete" layoutX="24.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #03c03c;" text="❌ Удалить" />
+      <Button fx:id="update" layoutX="24.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #03c03c;" text="🔄 Изменить" />
+      <ImageView fitHeight="62.0" fitWidth="126.0" layoutX="19.0" layoutY="14.0">
+         <image>
+            <Image url="@../../Login/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="10.0" layoutY="96.0" text="Наполнитель">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="refresh" layoutX="248.0" layoutY="251.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: #03c03c;" text="Обновить данные в таблице" />
+   </children>
+</Pane>

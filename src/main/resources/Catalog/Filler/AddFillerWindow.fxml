@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="297.0" style="-fx-background-color: #C1EA99;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.FillerControllers.FillerAddController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Добавление наполнителя">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="25.0" layoutY="70.0" prefHeight="25.0" prefWidth="253.0" promptText="Название наполнителя" />
+      <ComboBox fx:id="nameUnit" layoutX="223.0" layoutY="183.0" prefHeight="20.0" prefWidth="55.0" style="-fx-background-color: #32CD32;" />
+      <TextField fx:id="price" layoutX="25.0" layoutY="124.0" prefHeight="25.0" prefWidth="253.0" promptText="Цена" />
+      <Label layoutX="28.0" layoutY="50.0" text="Название наполнителя">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="104.0" text="Цена(в рублях)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="163.0" text="Количество на складе">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="countUnit" layoutX="24.0" layoutY="183.0" prefHeight="25.0" prefWidth="194.0" promptText="Количество" />
+      <Button fx:id="add" layoutX="94.0" layoutY="234.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #03c03c;" text="Добавить" />
+   </children>
+</Pane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1152.0" style="-fx-background-color: #C1EA99;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalog.Furniture.MainFurnitureController">
+   <children>
+      <TableView fx:id="table" layoutX="7.0" layoutY="143.0" prefHeight="405.0" prefWidth="1137.0">
+        <columns>
+            <TableColumn fx:id="name_Tabl" prefWidth="156.0" text="Название" />
+            <TableColumn fx:id="tip_Tabl" prefWidth="121.0" text="Тип мебели" />
+            <TableColumn fx:id="layout_Tabl" prefWidth="103.0" text="Макет" />
+            <TableColumn fx:id="height_Tabl" prefWidth="82.0" text="Высота" />
+            <TableColumn fx:id="width_Tabl" prefWidth="88.0" text="Ширина" />
+            <TableColumn fx:id="length_Tabl" prefWidth="90.0" text="Длинна" />
+            <TableColumn fx:id="filler_Tabl" prefWidth="122.0" text="Наполнитель" />
+            <TableColumn fx:id="upholstery_Tabl" prefWidth="131.0" text="Обивка" />
+            <TableColumn fx:id="accessories_Tabl" prefWidth="132.0" text="Акссесуары" />
+            <TableColumn fx:id="price_Tabl" prefWidth="111.0" text="Цена" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="✅ Добавить мебель">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font></Button>
+      <Button fx:id="delete" layoutX="14.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="❌ Удалить мебель">
+          <font>
+              <Font name="Calibri" size="13.0" />
+          </font></Button>
+      <Button fx:id="update" layoutX="13.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="🔄 Изменить мебель">
+          <font>
+              <Font name="Calibri" size="13.0" />
+          </font></Button>
+      <TextField fx:id="FildSearch" layoutX="506.0" layoutY="35.0" prefHeight="33.0" prefWidth="320.0" promptText="Поиск по названию мебели" />
+      <Button fx:id="filter" layoutX="847.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="Ⴤ Фильтр">
+       <font>
+           <Font name="Calibri" size="14.0" />
+       </font></Button>
+      <Button fx:id="search" layoutX="686.0" layoutY="81.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="Поиск">
+          <font>
+              <Font name="Calibri Bold" size="14.0" />
+          </font></Button>
+      <ComboBox fx:id="comboUnposh" layoutX="963.0" layoutY="89.0" prefHeight="25.0" prefWidth="138.0" promptText="Тип обивки" style="-fx-background-color: #32CD32;" />
+      <ComboBox fx:id="comboTip" layoutX="963.0" layoutY="51.0" prefHeight="25.0" prefWidth="138.0" promptText="Тип мебели" style="-fx-background-color: #32CD32;" />
+      <ComboBox fx:id="comboLayout" layoutX="963.0" layoutY="11.0" prefHeight="25.0" prefWidth="138.0" promptText="Макет" style="-fx-background-color: #32CD32;" />
+      <Button fx:id="refresh" layoutX="517.0" layoutY="83.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="Обновить данные">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font></Button>
+      <Button fx:id="clearFilter" layoutX="838.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #03c03c; -fx-text-fill: #444444;" text="Очистить фильтры">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="104.0" fitWidth="216.0" layoutX="238.0" layoutY="17.0">
+         <image>
+            <Image url="@../../Login/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

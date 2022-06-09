@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="336.0" style="-fx-background-color: #C1EA99;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Employee.Controller.AddEmployeeController">
+   <children>
+      <Label layoutX="45.0" layoutY="14.0" text="Добавление сотрудника">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fio" layoutX="33.0" layoutY="61.0" prefHeight="25.0" prefWidth="277.0" promptText="ФИО" />
+      <DatePicker fx:id="birth" layoutX="34.0" layoutY="105.0" prefHeight="25.0" prefWidth="277.0" promptText="Дата рождения" style="-fx-background-color: #32CD32;" />
+      <ComboBox fx:id="education" layoutX="33.0" layoutY="149.0" prefHeight="25.0" prefWidth="277.0" promptText="Образование" style="-fx-background-color: #32CD32;" />
+      <Label layoutX="33.0" layoutY="180.0" text="Паспорт">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="series" layoutX="35.0" layoutY="217.0" prefHeight="25.0" prefWidth="97.0" promptText="Серия" />
+      <TextField fx:id="nomer" layoutX="139.0" layoutY="217.0" prefHeight="25.0" prefWidth="175.0" promptText="Номер" />
+      <DatePicker fx:id="beginWork" layoutX="36.0" layoutY="322.0" prefHeight="25.0" prefWidth="277.0" promptText="Дата начала работы" style="-fx-background-color: #32CD32;" />
+      <ComboBox fx:id="post" layoutX="36.0" layoutY="366.0" prefHeight="25.0" prefWidth="277.0" promptText="Должность" style="-fx-background-color: #32CD32;" />
+      <TextField fx:id="phone" layoutX="37.0" layoutY="265.0" prefHeight="25.0" prefWidth="277.0" promptText="Номер телефона" />
+      <Separator layoutX="20.0" layoutY="297.0" prefHeight="0.0" prefWidth="304.0" />
+      <ComboBox fx:id="workPlace" layoutX="37.0" layoutY="410.0" prefHeight="25.0" prefWidth="277.0" promptText="Адрес работы" style="-fx-background-color: #32CD32;" />
+      <Button fx:id="add" layoutX="77.0" layoutY="698.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="195.0" style="-fx-background-color: #03c03c;" text="Добавить сотрудника">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Button>
+      <Separator layoutX="21.0" layoutY="444.0" prefHeight="0.0" prefWidth="304.0" />
+      <TextField fx:id="login" layoutX="37.0" layoutY="466.0" prefHeight="25.0" prefWidth="277.0" promptText="Логин" />
+      <TextField fx:id="password" layoutX="36.0" layoutY="510.0" prefHeight="25.0" prefWidth="277.0" promptText="Пароль" />
+      <TextField fx:id="controlQuest" layoutX="41.0" layoutY="608.0" prefHeight="25.0" prefWidth="277.0" promptText="Ответ на контрольный вопрос" />
+      <Button fx:id="hint" layoutX="10.0" layoutY="554.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" text="?" />
+      <ComboBox fx:id="controlQuestCombo" layoutX="42.0" layoutY="554.0" prefHeight="25.0" prefWidth="277.0" promptText="Контрольный вопрос" style="-fx-background-color: #32CD32;" />
+      <Label layoutX="35.0" layoutY="42.0" text="ФИО ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="86.0" text="Дата рождения ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="130.0" text="Образование">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="198.0" text="Серия">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="198.0" text="Номер">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="242.0" text="Номер телефона">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="300.0" text="Дата начала работы">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="347.0" text="Должность">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="391.0" text="Адресс работы">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="447.0" text="Логин">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="491.0" text="Пароль">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="535.0" text="Контрольный вопрос">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="589.0" text="Ответ на контрольный вопрос">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboRole" layoutX="37.0" layoutY="662.0" prefHeight="25.0" prefWidth="277.0" promptText="Роль аккаунта" style="-fx-background-color: #32CD32;" />
+      <Label fx:id="textRole" layoutX="39.0" layoutY="643.0" text="Роль аккаунта">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
